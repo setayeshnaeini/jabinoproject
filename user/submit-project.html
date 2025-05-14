@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ثبت و پرداخت آگهی</title>
+    <!-- لینک بوت‌استرپ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- فونت آیکون‌ها -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Tahoma', sans-serif;
+            background: linear-gradient(135deg, #1f4037, #99f2c8);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            width: 100%;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+        }
+        .btn-custom {
+            background: linear-gradient(135deg, #ff512f, #dd2476);
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 12px;
+            transition: all 0.3s ease;
+        }
+        .btn-custom:hover {
+            background: linear-gradient(135deg, #dd2476, #ff512f);
+            box-shadow: 0 5px 15px rgba(221, 36, 118, 0.5);
+        }
+        .step {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card p-4">
+            <h2 class="text-center mb-4"><i class="fas fa-briefcase"></i> ثبت آگهی و پرداخت</h2>
+            <form action="payment_gateway.php" method="post">
+                <div id="step1" class="step active">
+                    <h4 class="text-center text-dark">مرحله ۱: اطلاعات آگهی</h4>
+                    <div class="mb-3">
+                        <label for="title" class="form-label">عنوان آگهی:</label>
+                        <input type="text" id="title" name="title" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="description" class="form-label">توضیحات:</label>
+                        <textarea id="description" name="description" class="form-control" rows="3" required></textarea>
+                    </div>
+                    <button type="button" class="btn btn-custom w-100" onclick="nextStep()"><i class="fas fa-arrow-right"></i> ادامه</button>
+                </div>
+                
+                <div id="step2" class="step">
+                    <h4 class="text-center text-dark">مرحله ۲: پرداخت</h4>
+                    <div class="mb-3">
+                        <label for="cardNumber" class="form-label">شماره کارت:</label>
+                        <input type="text" id="cardNumber" name="cardNumber" class="form-control" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+                    </div>
+                    <div class="mb-3 row">
+                        <div class="col">
+                            <label for="expiryDate" class="form-label">تاریخ انقضا:</label>
+                            <input type="text" id="expiryDate" name="expiryDate" class="form-control" placeholder="MM/YY" required>
+                        </div>
+                        <div class="col">
+                            <label for="cvv" class="form-label">CVV:</label>
+                            <input type="text" id="cvv" name="cvv" class="form-control" placeholder="XXX" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-success w-100"><i class="fas fa-check-circle"></i> پرداخت و ثبت آگهی</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function nextStep() {
+            document.getElementById("step1").classList.remove("active");
+            document.getElementById("step2").classList.add("active");
+        }
+    </script>
+
+    <!-- اسکریپت بوت‌استرپ -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

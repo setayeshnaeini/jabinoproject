@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>راهنما | جابینو</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f4f6fc;
+      font-family: 'IRANSans', sans-serif;
+    }
+    .sidebar {
+      background-color: #fff;
+      height: 100vh;
+      border-left: 1px solid #e0e0e0;
+      position: sticky;
+      top: 0;
+    }
+    .sidebar .nav-link {
+      color: #444;
+      padding: 12px 20px;
+      transition: all 0.3s;
+      border-radius: 8px;
+    }
+    .sidebar .nav-link:hover, .sidebar .nav-link.active {
+      background-color: #007bff;
+      color: #fff;
+    }
+    .sidebar .nav-link i {
+      margin-left: 10px;
+      transition: transform 0.3s ease;
+    }
+    .sidebar .nav-link:hover i {
+      transform: scale(1.2);
+    }
+    .fade-in {
+      animation: fadeIn 0.8s ease forwards;
+      opacity: 0;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .card {
+      border: none;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .faq-item i {
+      color: #007bff;
+      margin-left: 8px;
+    }
+    .faq-item {
+      border-bottom: 1px dashed #ddd;
+      padding: 15px 0;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+    <!-- Sidebar -->
+    <div class="col-md-2 sidebar p-3">
+      <h4 class="text-center text-primary fw-bold mb-4">جابینو</h4>
+      <nav class="nav flex-column">
+        <a class="nav-link" href="index.html"><i class="bi bi-house-door"></i>خانه</a>
+        <a class="nav-link" href="resumes.html"><i class="bi bi-file-earmark-person"></i>رزومه‌ها</a>
+        <a class="nav-link" href="jobs.html"><i class="bi bi-briefcase"></i>آگهی‌ها</a>
+        <a class="nav-link" href="employers.html"><i class="bi bi-building"></i>کارفرمایان</a>
+        <a class="nav-link" href="messages.html"><i class="bi bi-chat-dots"></i>پیام‌ها</a>
+        <a class="nav-link" href="settings.html"><i class="bi bi-gear"></i>تنظیمات</a>
+        <a class="nav-link active" href="#"><i class="bi bi-question-circle"></i>راهنما</a>
+      </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="col-md-10 p-4">
+      <h5 class="fw-bold mb-4"><i class="bi bi-question-circle-fill text-primary ms-2"></i>مرکز راهنمایی جابینو</h5>
+
+      <div class="card p-4 fade-in">
+        <div class="faq-item">
+          <h6><i class="bi bi-person-lines-fill"></i>چطور رزومه بسازم؟</h6>
+          <p class="text-muted">برای ساخت رزومه، به بخش "رزومه‌ها" بروید و گزینه "رزومه جدید" را انتخاب کنید. سپس فرم مربوطه را پر کرده و ذخیره نمایید.</p>
+        </div>
+        <div class="faq-item">
+          <h6><i class="bi bi-briefcase-fill"></i>چطور یک آگهی شغلی ثبت کنم؟</h6>
+          <p class="text-muted">در بخش "آگهی‌ها" روی "ثبت آگهی" کلیک کرده و اطلاعات موقعیت شغلی را وارد کنید.</p>
+        </div>
+        <div class="faq-item">
+          <h6><i class="bi bi-envelope-fill"></i>چگونه با کاربران تماس بگیرم؟</h6>
+          <p class="text-muted">در بخش پیام‌ها می‌توانید پیام‌های دریافتی را مشاهده کرده و پاسخ دهید. همچنین امکان ارسال پیام جدید نیز فراهم است.</p>
+        </div>
+        <div class="faq-item">
+          <h6><i class="bi bi-gear-fill"></i>چگونه تنظیمات حسابم را تغییر دهم؟</h6>
+          <p class="text-muted">به بخش "تنظیمات" بروید و اطلاعاتی مانند ایمیل، رمز عبور یا اعلان‌ها را تغییر دهید.</p>
+        </div>
+        <div class="faq-item">
+          <h6><i class="bi bi-telephone-fill"></i>پشتیبانی چطور در دسترس است؟</h6>
+          <p class="text-muted">برای ارتباط با تیم پشتیبانی، از طریق ایمیل info@jobino.ir یا شماره ۰۲۱-۱۲۳۴۵۶ تماس بگیرید.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

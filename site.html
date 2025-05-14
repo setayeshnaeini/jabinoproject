@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>جابینو</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css" rel="stylesheet" type="text-css">
+  <link rel="stylesheet" href="user/css/design.css">
+  <link rel="icon" href="user/img/logo2.png">
+</head>
+<body>
+   <!--بک گراند صفحه اصلی-->
+
+  </div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <!-- لوگو -->
+      <a class="navbar-brand" href="site.html">
+        <img src="user/img/logo2.png" alt="jabino logo" height="40">
+      </a>
+      <!-- نوار جستجو وسط -->
+      <form class="d-flex mx-auto" style="width: 50%;">
+        <input class="form-control me-2" type="search" placeholder="جستجوی شغل یا شرکت" aria-label="Search">
+        <button class="btn btn-outline-primary" type="submit">جستجو</button>
+      </form>
+  
+      <div class="d-flex gap-2 align-items-center">
+        <a href="user/register.html" class="btn btn-outline-success">ثبت‌نام</a>
+        <a href="user/login.html" class="btn btn-primary">ورود</a>
+  
+        <!-- دکمه منوی همبرگر -->
+        <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+  
+      <!-- منوی همبرگری-->
+      <div class="collapse navbar-collapse mt-3" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="site.html">خانه</a></li>
+          <li class="nav-item"><a class="nav-link" href="user/about.html">درباره ما</a></li>
+          <li class="nav-item"><a class="nav-link" href="user/contact.html">تماس با ما</a></li>
+          <li class="nav-item"><a class="nav-link" href="user/submit-project.html">ثبت آگهی</a></li>
+          <li class="nav-item"><a class="nav-link" href="user/archive.html">مشاغل</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html">پنل مدیریت</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- قسمت search -->
+  <div class="container my-5">
+    <div class="search-box text-center">
+      <h1 class="mb-4">فرصت شغلی مناسب خود را پیدا کنید</h1>
+      <form class="row g-3">
+        <div class="col-md-5">
+          <input type="text" class="form-control" placeholder="عنوان شغل یا کلمات کلیدی">
+        </div>
+        <div class="col-md-4">
+          <select class="form-select">
+            <option selected>همه شهرها</option>
+            <option>تهران</option>
+            <option>مشهد</option>
+            <option>اصفهان</option>
+            <option>شیراز</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <button type="submit" class="btn btn-primary w-100">جستجوی شغل</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!--قسمت فرصت های شغلی-->
+  <div class="container my-4">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-md-4 mb-2 mb-md-0">
+       
+      </div>
+      <div class="col-md-6">
+        <select class="form-select" id="jobFilter">
+          <option value="all">همه دسته‌بندی‌ها</option>
+          <option value="frontend">فرانت‌اند</option>
+          <option value="backend">بک‌اند</option>
+          <option value="uiux">طراح UI/UX</option>
+          <option value="manager">مدیر پروژه</option>
+          <option value="seo">متخصص سئو</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h3 class="text-center mb-4">جدیدترین فرصت‌های شغلی</h3>
+    <div class="row g-4">
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card h-100 p-3">
+          <h5>برنامه‌نویس فرانت‌اند</h5>
+          <p class="text-muted">شرکت تکنو وب - تهران</p>
+          <p>تسلط به HTML, CSS, JavaScript و فریم‌ورک</p>
+          <p>حقوق پیشنهادی:15 میلیون</p>
+          <a href="user/details.html" class="btn btn-outline-primary btn-sm">مشاهده جزئیات</a>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card h-100 p-3">
+          <h5>کارشناس دیجیتال مارکتینگ</h5>
+          <p class="text-muted">شرکت آریا رسانه - مشهد</p>
+          <p>آشنا به SEO، تبلیغات گوگل و بازاریابی محتوایی</p>
+          <a href="#" class="btn btn-outline-primary btn-sm">مشاهده جزئیات</a>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card h-100 p-3">
+          <h5>طراح رابط کاربری (UI)</h5>
+          <p class="text-muted">استودیو طراحی نئو - شیراز</p>
+          <p>مسلط به Figma و طراحی تجربه کاربری</p>
+          <a href="#" class="btn btn-outline-primary btn-sm">مشاهده جزئیات</a>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card h-100 p-3">
+          <h5>توسعه دهنده بک اند</h5>
+          <p class="text-muted">شرکت وب سرویس-تهران</p>
+          <p>تسلط به Node.js,MongoDB</p>
+          <a href="#" class="btn btn-outline-primary btn-sm">مشاهده جزئیات</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container my-5">
+    <div class="row align-items-center" dir="rtl">
+      <!-- تصویر سمت راست -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <img src="user/img/summary-college.3-e1749a4d2e76.svg" alt="مزایای جابینو" class="img-fluid rounded shadow">
+      </div>
+  
+      <!-- متن مزایا سمت چپ -->
+      <div class="col-md-6">
+        <h4 class="mb-4 text-primary fw-bold">مزایای استفاده از جابینو</h4>
+        <ul class="list-unstyled">
+          <li class="mb-3 d-flex align-items-start">
+            <i class="bi bi-lightning-charge-fill text-success fs-4 ms-2"></i>
+            <span><strong>سرعت بالا:</strong> پیدا کردن شغل مناسب تنها با چند کلیک!</span>
+          </li>
+          <li class="mb-3 d-flex align-items-start">
+            <i class="bi bi-people-fill text-info fs-4 ms-2"></i>
+            <span><strong>ارتباط مستقیم:</strong> تماس راحت و بدون واسطه با کارفرماها</span>
+          </li>
+          <li class="mb-3 d-flex align-items-start">
+            <i class="bi bi-graph-up-arrow text-warning fs-4 ms-2"></i>
+            <span><strong>فرصت رشد:</strong> دسترسی به بهترین موقعیت‌های شغلی در سراسر کشور</span>
+          </li>
+          <li class="mb-3 d-flex align-items-start">
+            <i class="bi bi-shield-check text-danger fs-4 ms-2"></i>
+            <span><strong>امنیت و اعتماد:</strong> بررسی شده توسط تیم پشتیبانی جابینو</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--قسمت دسته بندی خدمات-->
+  <section class="services py-5">
+    <div class="container text-center">
+        <h2 class="mb-4">دسته بندی خدمات</h2>
+        <div class="row g-4">
+            <div class="col-md-4 col-lg-2">
+              <a href="user/translation.html" class="text-decoration-none text-dark">               
+                 <div class="box p-3 shadow-sm rounded hover-shadow">
+                <i class="bi bi-translate fs-1 text-primary"></i>
+                <h5 class="mt-2">ترجمه</h5>
+                <p class="text-muted">کارهای مهم خود را با آسایش به دستیار مجازی بسپارید.</p>
+            </div></a>
+            </div>
+            <div class="col-md-4 col-lg-2">
+                <div class="box p-3 shadow-sm rounded">
+                    <i class="bi bi-file-earmark-text fs-1 text-success"></i>
+                    <h5 class="mt-2">تولید محتوا</h5>
+                    <p class="text-muted">نوشتن محتواهای جذاب و مناسب برای وبسایت ها و شبکه های اجتماعی</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-2">
+                <div class="box p-3 shadow-sm rounded">
+                    <i class="bi bi-laptop fs-1 text-warning"></i>
+                    <h5 class="mt-2">طراحی سایت</h5>
+                    <p class="text-muted">برای کسب و کار خود در اینترنت یک وبسایت بسازید تا معروف شوید.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-2">
+                <div class="box p-3 shadow-sm rounded">
+                    <i class="bi bi-code-slash fs-1 text-danger"></i>
+                    <h5 class="mt-2">برنامه نویسی</h5>
+                    <p class="text-muted">برای کسب و کار خود نرم افزار یا اپلیکیشن سقارش دهید تا فروشتان چند برابر شود.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!--بنر قسمت footer-->
+  <section class="cta-box">
+    <div class="container text-center">
+      <h2 class="text-white mb-4">اگر آماده‌ای، بیا ماجراجویی رو شروع کنیم!</h2>
+      <a href="user/register.html" class="btn btn-light btn-lg">بزن بریم</a> 
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-modern">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h2> جابینو</h2>
+        <p>پیدا کردن شغل مناسب، آینده‌ای روشن‌تر بساز!</p>
+      </div>
+  
+      <div class="footer-links">
+        <h3>لینک‌های مفید</h3>
+        <ul>
+          <li><a href="user/about.html">درباره ما</a></li>
+          <li><a href="site.html">فرصت‌های شغلی</a></li>
+          <li><a href="user/contact.html">تماس با ما</a></li>
+          <li><a href="#">سوالات متداول</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-social">
+        <h3>ما را دنبال کنید</h3>
+        <div class="social-icons">
+          <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+          <a href="https://t.me" target="_blank"><i class="bi bi-telegram"></i></a>
+          <a href="https://www.linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>© 2025  جابینو، تمامی حقوق محفوظ است.</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

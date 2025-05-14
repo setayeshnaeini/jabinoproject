@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>آرشیو مشاغل|  </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    @font-face {
+     font-family: 'Vazir';
+     src: url('fonts/Vazir-Variable.woff2');
+    }
+   </style>
+</head>
+<body>
+
+<!-- هدر سایت -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+  <div class="container">
+    <a class="navbar-brand" href="site.html"> جابینو</a>
+  </div>
+</nav>
+
+<!-- فیلتر و مرتب سازی -->
+<div class="container mb-4">
+  <div class="row g-3 align-items-center">
+
+    <!-- مرتب سازی -->
+    <div class="col-md-6">
+      <select class="form-select">
+        <option selected>مرتب سازی بر اساس</option>
+        <option value="newest">جدیدترین</option>
+        <option value="oldest">قدیمی‌ترین</option>
+        <option value="high-salary">حقوق بالاترین</option>
+      </select>
+    </div>
+
+    <!-- دسته بندی -->
+    <div class="col-md-6">
+      <select class="form-select">
+        <option selected>فیلتر بر اساس دسته بندی</option>
+        <option value="it">فنی و مهندسی</option>
+        <option value="sales">فروش و بازاریابی</option>
+        <option value="finance">مالی و حسابداری</option>
+        <option value="education">آموزشی</option>
+      </select>
+    </div>
+
+  </div>
+</div>
+
+<!-- لیست مشاغل -->
+<div class="container">
+  <div class="row g-4">
+
+    <!-- کارت شغل گرافیک -->
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="img/graphic.jpg" class="card-img-top" alt="شرکت">
+        <div class="card-body">
+          <h5 class="card-title">طراح گرافیک</h5>
+          <p class="card-text">شرکت هنر امروز</p>
+          <p class="card-text">  ساعت کاری:پاره وقت</p>
+          <p class="card-text text-success">حقوق: ۸ میلیون تومان</p>
+          <a href="job-details.html" class="btn btn-primary">مشاهده جزئیات</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- کارت شغل تحلیل مالی -->
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="img/tahlil.png" class="card-img-top" alt="شرکت">
+        <div class="card-body">
+          <h5 class="card-title">تحلیلگر مالی</h5>
+          <p class="card-text">شرکت مالی البرز</p>
+          <p class="card-text">  ساعت کاری:تمام وقت</p>
+          <p class="card-text text-success">حقوق: ۱۸ میلیون تومان</p>
+          <a href="job-details.html" class="btn btn-primary">مشاهده جزئیات</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- کارت شغل تدریس زبان -->
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="img/zaban.jpeg" class="card-img-top" alt="شرکت">
+        <div class="card-body">
+          <h5 class="card-title">مدرس زبان انگلیسی</h5>
+          <p class="card-text">موسسه زبان آینده</p>
+          <p class="card-text">ساعت کاری:پاره وقت</p>
+          <p class="card-text text-success">حقوق: ۱۱ میلیون تومان</p>
+          <a href="job-details.html" class="btn btn-primary">مشاهده جزئیات</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

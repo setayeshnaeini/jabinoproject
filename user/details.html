@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>جزئیات شغل</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/design.css">
+  <style>
+   @font-face {
+    font-family: 'Vazir';
+    src: url('fonts/Vazir-Variable.woff2');
+   }
+  </style>
+</head>
+<body>
+
+<!-- هدر  -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+  <div class="container">
+    <a class="navbar-brand" href="site.html"> جابینو</a>
+  </div>
+</nav>
+
+<!-- بدنه اصلی -->
+<div class="container mb-5">
+  <div class="row g-4">
+
+    <!-- تب ها و تصاویر-->
+    <div class="col-md-5">
+
+<!-- شروع گالری عکس در صفحه جزئیات -->
+<div id="productGallery" class="carousel slide mb-4" data-bs-ride="carousel">
+  
+    <!-- عکس اصلی بزرگ -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/front.png" class="d-block w-100 rounded" alt="عکس ۱">
+      </div>
+      <div class="carousel-item">
+        <img src="img/front1.jpg" class="d-block w-100 rounded" alt="عکس ۲">
+      </div>
+      <div class="carousel-item">
+        <img src="img/front2.jpg" class="d-block w-100 rounded" alt="عکس ۳">
+      </div>
+    </div>
+  
+  </div>
+  <!-- تصاویر کوچک پایین عکس اصلی -->
+  <div class="d-flex justify-content-center gap-2">
+    <img src="img/front.png" class="img-thumbnail" style="width: 80px; cursor: pointer;" data-bs-target="#productGallery" data-bs-slide-to="0" aria-current="true" alt="کوچک ۱">
+    <img src="img/front1.jpg" class="img-thumbnail" style="width: 80px; cursor: pointer;" data-bs-target="#productGallery" data-bs-slide-to="1" alt="کوچک ۲">
+    <img src="img/front2.jpg" class="img-thumbnail" style="width: 80px; cursor: pointer;" data-bs-target="#productGallery" data-bs-slide-to="2" alt="کوچک ۳">
+  </div>
+
+      <div class="tab-content p-3 border border-top-0" id="jobTabContent">
+        <div class="tab-pane fade show active" id="details" role="tabpanel">
+          <p>این فرصت شغلی مخصوص توسعه‌دهندگان علاقه‌مند به کار با تکنولوژی‌های روز دنیا است. شما باید در حوزه‌ی طراحی، توسعه و پشتیبانی وب سایت‌ها مهارت کافی داشته باشید.</p>
+        </div>
+        <div class="tab-pane fade" id="comments" role="tabpanel">
+          <p>هیچ نظری ثبت نشده است. اولین نظر را شما ارسال کنید!</p>
+        </div>
+        <div class="tab-pane fade" id="benefits" role="tabpanel">
+          <ul>
+            <li>بیمه کامل تامین اجتماعی</li>
+            <li>پاداش‌های فصلی</li>
+            <li>محیط کاری مثبت و تیم حرفه‌ای</li>
+          </ul>
+        </div>
+      </div>
+
+      <ul class="nav nav-tabs mb-3" id="jobTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="details-tab" data-bs-toggle="tab" data-bs-target="#details" type="button" role="tab">جزئیات</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="comments-tab" data-bs-toggle="tab" data-bs-target="#comments" type="button" role="tab">نظرات</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="benefits-tab" data-bs-toggle="tab" data-bs-target="#benefits" type="button" role="tab">مزایا</button>
+        </li>
+      </ul>
+
+    </div>
+
+    <!--توضیحات-->
+    <div class="col-md-7">
+      <h2>فرصت شغلی:  برنامه نویس فرانت اند</h2>
+      <h5 class="text-muted mb-3">شرکت فناوری برتر</h5>
+      <p><strong>حقوق:</strong> ۱۵ تا ۲۰ میلیون تومان</p>
+      <p><strong>محل کار:</strong> تهران، ایران</p>
+      <hr>
+
+      <div class="content-text">
+        <p>شرکت فناوری برتر با بیش از ۱۰ سال تجربه در زمینه طراحی و پیاده‌سازی پروژه‌های دیجیتال، به دنبال توسعه‌دهنده‌های وب ماهر می‌باشد. در این موقعیت شغلی، شما در یک محیط پویا و دوستانه مشغول به توسعه پروژه‌های متنوعی از جمله فروشگاه‌های آنلاین، سامانه‌های مدیریت محتوا و اپلیکیشن‌های تحت وب خواهید شد.</p>
+
+        <p>تسلط کامل به HTML، CSS، Bootstrap، و تجربه کار با CMSهایی مانند وردپرس مزیت محسوب می‌شود. آشنایی با
+            مباحث SEO، طراحی ریسپانسیو و بهینه‌سازی سرعت وب‌سایت‌ها امتیاز ویژه دارد.</p>
+
+        <p>از مزایای کار در این شرکت می‌توان به ساعات کاری شناور، برنامه‌های آموزشی حرفه‌ای، ارتقاء مهارت‌ها و امکان ارتقاء شغلی سریع اشاره کرد. شرکت فناوری برتر همواره به رشد و پیشرفت اعضای تیم خود اهمیت ویژه‌ای می‌دهد.</p>
+
+        <p>در صورتی که علاقه‌مند به همکاری با ما هستید، می‌توانید رزومه خود را از طریق فرم ثبت نام سایت یا ایمیل رسمی شرکت برای ما ارسال نمایید.</p>
+
+        <p>با ما آینده‌ی شغلی خود را بسازید!</p>
+      </div>
+
+      <button class="btn btn-success mt-4">ارسال رزومه</button>
+    </div>
+    <!--footer-->
+    <footer class="bg-light text-dark mt-5 pt-4 pb-2 border-top">
+        <div class="container">
+          <div class="row">
+            
+            <div class="col-md-6 mb-3">
+              <h5>آدرس شرکت</h5>
+              <p>تهران، خیابان آزادی، پلاک ۴۵، طبقه دوم</p>
+            </div>
+            
+            <div class="col-md-6 mb-3">
+              <h5>راه‌های ارتباطی</h5>
+              <p>تلفن: ۰۲۱-۱۲۳۴۵۶۷۸</p>
+              <p>ایمیل: info@jobsite.com</p>
+              <p>ساعات پاسخگویی: ۹ صبح تا ۵ عصر</p>
+            </div>
+      
+          </div>
+      
+          <div class="text-center mt-4 small text-muted">
+            <p class="mb-0">© تمامی حقوق این سایت محفوظ است - ۲۰۲۵</p>
+          </div>
+        </div>
+      </footer>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
