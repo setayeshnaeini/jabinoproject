@@ -6,16 +6,14 @@
   <title>جابینو</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-  <link href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css" rel="stylesheet" type="text-css">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="user/css/design.css">
   <link rel="icon" href="user/img/logo2.png">
 </head>
 <body>
-   <!--بک گراند صفحه اصلی-->
 
-  </div>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar custom-navbar">
     <div class="container">
       <!-- لوگو -->
       <a class="navbar-brand" href="site.html">
@@ -24,12 +22,12 @@
       <!-- نوار جستجو وسط -->
       <form class="d-flex mx-auto" style="width: 50%;">
         <input class="form-control me-2" type="search" placeholder="جستجوی شغل یا شرکت" aria-label="Search">
-        <button class="btn btn-outline-primary" type="submit">جستجو</button>
+        <button class="btn btn-search" type="submit">جستجو</button>
       </form>
   
       <div class="d-flex gap-2 align-items-center">
-        <a href="user/register.html" class="btn btn-outline-success">ثبت‌نام</a>
-        <a href="user/login.html" class="btn btn-primary">ورود</a>
+        <a href="user/register.html" class="btn btn-register">ثبت‌نام</a>
+        <a href="user/login.html" class="btn btn-login">ورود</a>
   
         <!-- دکمه منوی همبرگر -->
         <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
@@ -51,7 +49,13 @@
       </div>
     </div>
   </nav>
+    <section class="main-banner d-flex justify-content-center">
+      <img src="user/img/banersite.jpg" alt="بنر سایت" class="banner-img">
+    </section>
 
+    <div class="islimi-decor">
+      <img src="user/img/photo18674053728-removebg-preview.png" alt="طرح اسلیمی">
+    </div>
   <!-- قسمت search -->
   <div class="container my-5">
     <div class="search-box text-center">
@@ -70,68 +74,93 @@
           </select>
         </div>
         <div class="col-md-3">
-          <button type="submit" class="btn btn-primary w-100">جستجوی شغل</button>
+          <button type="submit" class="btn btn-job">جستجوی شغل</button>
         </div>
       </form>
     </div>
   </div>
+  <div class="islimi-decor">
+    <img src="user/img/photo18674053728-removebg-preview.png" alt="طرح اسلیمی">
+  </div>
 
   <!--قسمت فرصت های شغلی-->
   <div class="container my-4">
-    <div class="row justify-content-between align-items-center">
-      <div class="col-md-4 mb-2 mb-md-0">
+    <div class="row justify-content-center mb-4">
+      <div class="col-md-auto d-flex align-items-center flex-wrap gap-3">
        
       </div>
-      <div class="col-md-6">
-        <select class="form-select" id="jobFilter">
-          <option value="all">همه دسته‌بندی‌ها</option>
-          <option value="frontend">فرانت‌اند</option>
-          <option value="backend">بک‌اند</option>
-          <option value="uiux">طراح UI/UX</option>
-          <option value="manager">مدیر پروژه</option>
-          <option value="seo">متخصص سئو</option>
-        </select>
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center flex-wrap mb-4">
+          <h3 class="mb-0 text-center">جدیدترین فرصت‌های شغلی</h3>
+          <select class="form-select w-auto" id="jobFilter">
+            <option value="all">همه دسته‌بندی‌ها</option>
+            <option value="frontend">فرانت‌اند</option>
+            <option value="backend">بک‌اند</option>
+            <option value="uiux">طراح UI/UX</option>
+            <option value="manager">مدیر پروژه</option>
+            <option value="seo">متخصص سئو</option>
+          </select>
+        </div>
+      
+        <div class="row g-4">
+          <!-- کارت‌های شغلی -->
+            <div class="row g-4">
+              <div class="col-12 col-sm-6 col-md-4">
+                <div class="card h-100 p-3">
+                  <h5>برنامه‌نویس فرانت‌اند</h5>
+                  <p class="text-muted">شرکت تکنو وب - تهران</p>
+                  <p>تسلط به HTML, CSS, JavaScript و فریم‌ورک</p>
+                  <p>حقوق پیشنهادی:15 میلیون</p>
+                  <a href="user/details.html" class="btn btn-outline-primary btn-sm">مشاهده جزئیات</a>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4">
+                <div class="card h-100 p-3">
+                  <h5>کارشناس دیجیتال مارکتینگ</h5>
+                  <p class="text-muted">شرکت آریا رسانه - مشهد</p>
+                  <p>آشنا به SEO، تبلیغات گوگل و بازاریابی محتوایی</p>
+                  <a href="#" class="btn btn-outline-primary btn-sm">مشاهده جزئیات</a>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4">
+                <div class="card h-100 p-3">
+                  <h5>طراح رابط کاربری (UI)</h5>
+                  <p class="text-muted">استودیو طراحی نئو - شیراز</p>
+                  <p>مسلط به Figma و طراحی تجربه کاربری</p>
+                  <a href="#" class="btn btn-outline-primary btn-sm">مشاهده جزئیات</a>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4">
+                <div class="card h-100 p-3">
+                  <h5>توسعه دهنده بک اند</h5>
+                  <p class="text-muted">شرکت وب سرویس-تهران</p>
+                  <p>تسلط به Node.js,MongoDB</p>
+                  <a href="#" class="btn btn-outline-primary btn-sm">مشاهده جزئیات</a>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4">
+                <div class="card h-100 p-3">
+                  <h5>کارشناس فروش</h5>
+                  <p class="text-muted">شرکت کالا پخش نوین</p>
+                  <p>پیگیری مشتریان،افزایش فروش و معرفی محصولات جدید</p>
+                  <a href="#" class="btn btn-outline-primary btn-sm">مشاهده جزئیات</a>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4">
+                <div class="card h-100 p-3">
+                  <h5>کارشناس منابع انسانی</h5>
+                  <p class="text-muted">گروه صنعتی آریا-تهران</p>
+                  <p>جذب و استخدام نیرو،مدیریت پرونده های پرسنلی</p>
+                  <a href="#" class="btn btn-outline-primary btn-sm">مشاهده جزئیات</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="container">
-    <h3 class="text-center mb-4">جدیدترین فرصت‌های شغلی</h3>
-    <div class="row g-4">
-      <div class="col-12 col-sm-6 col-md-4">
-        <div class="card h-100 p-3">
-          <h5>برنامه‌نویس فرانت‌اند</h5>
-          <p class="text-muted">شرکت تکنو وب - تهران</p>
-          <p>تسلط به HTML, CSS, JavaScript و فریم‌ورک</p>
-          <p>حقوق پیشنهادی:15 میلیون</p>
-          <a href="user/details.html" class="btn btn-outline-primary btn-sm">مشاهده جزئیات</a>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4">
-        <div class="card h-100 p-3">
-          <h5>کارشناس دیجیتال مارکتینگ</h5>
-          <p class="text-muted">شرکت آریا رسانه - مشهد</p>
-          <p>آشنا به SEO، تبلیغات گوگل و بازاریابی محتوایی</p>
-          <a href="#" class="btn btn-outline-primary btn-sm">مشاهده جزئیات</a>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4">
-        <div class="card h-100 p-3">
-          <h5>طراح رابط کاربری (UI)</h5>
-          <p class="text-muted">استودیو طراحی نئو - شیراز</p>
-          <p>مسلط به Figma و طراحی تجربه کاربری</p>
-          <a href="#" class="btn btn-outline-primary btn-sm">مشاهده جزئیات</a>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4">
-        <div class="card h-100 p-3">
-          <h5>توسعه دهنده بک اند</h5>
-          <p class="text-muted">شرکت وب سرویس-تهران</p>
-          <p>تسلط به Node.js,MongoDB</p>
-          <a href="#" class="btn btn-outline-primary btn-sm">مشاهده جزئیات</a>
-        </div>
-      </div>
-    </div>
-  </div>
+
   <div class="container my-5">
     <div class="row align-items-center" dir="rtl">
       <!-- تصویر سمت راست -->
@@ -191,25 +220,48 @@
                 </div>
             </div>
             <div class="col-md-4 col-lg-2">
+              <div class="box p-3 shadow-sm rounded">
+                  <i class="bi bi-briefcase fs-1 text-warning"></i>
+                  <h5 class="mt-2">مشاوره کسب و کار</h5>
+                  <p class="text-muted">برای کسب و کار خود در اینترنت یک وبسایت بسازید تا معروف شوید.</p>
+              </div>
+          </div>
+          <div class="col-md-4 col-lg-2">
+            <div class="box p-3 shadow-sm rounded">
+                <i class="bi bi-camera fs-1 text-warning"></i>
+                <h5 class="mt-2">عکاسی حرفه ای</h5>
+                <p class="text-muted">برای کسب و کار خود در اینترنت یک وبسایت بسازید تا معروف شوید.</p>
+            </div>
+        </div>
+            <div class="col-md-4 col-lg-2">
                 <div class="box p-3 shadow-sm rounded">
                     <i class="bi bi-code-slash fs-1 text-danger"></i>
                     <h5 class="mt-2">برنامه نویسی</h5>
                     <p class="text-muted">برای کسب و کار خود نرم افزار یا اپلیکیشن سقارش دهید تا فروشتان چند برابر شود.</p>
                 </div>
             </div>
+            <div class="col-md-4 col-lg-2">
+              <div class="box p-3 shadow-sm rounded">
+                <i class="bi bi-megaphone fs-1 text-danger"></i>
+                <h5 class="mt-2">بازاریابی دیجیتال</h5>
+                <p class="text-muted">برای کسب و کار خود نرم افزار یا اپلیکیشن سقارش دهید تا فروشتان چند برابر شود.</p>
         </div>
-    </div>
+          </div>
   </section>
   <!--بنر قسمت footer-->
   <section class="cta-box">
     <div class="container text-center">
-      <h2 class="text-white mb-4">اگر آماده‌ای، بیا ماجراجویی رو شروع کنیم!</h2>
-      <a href="user/register.html" class="btn btn-light btn-lg">بزن بریم</a> 
+      <h2 class="site2 mb-4">اگر آماده‌ای، بیا ماجراجویی رو شروع کنیم!</h2>
+      <a href="user/register.html" class="btn btn-site">بزن بریم</a> 
     </div>
   </section>
+  <div class="islimi-decor">
+    <img src="user/img/photo18674053728-removebg-preview.png" alt="طرح اسلیمی">
+  </div>
 
   <!-- Footer -->
   <footer class="footer-modern">
+    <img src="user/img/photo18674888480-removebg-preview.png" class="footer-bg w-100 h-100 position-absolute top-0 start-0">
     <div class="footer-container">
       <div class="footer-about">
         <h2> جابینو</h2>
@@ -240,6 +292,8 @@
       <p>© 2025  جابینو، تمامی حقوق محفوظ است.</p>
     </div>
   </footer>
+    </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

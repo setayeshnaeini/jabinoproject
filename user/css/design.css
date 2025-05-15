@@ -1,419 +1,318 @@
+/* فونت */
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
 
-@font-face {
-  font-family: 'Vazir',sans-serif;
-  src: url('fonts/Vazir-Variable') format('woff2');
-}
 body {
-    font-family: 'Vazir',sans-serif;
+    font-family: 'Vazirmatn', sans-serif;
     margin: 0;
     padding: 0;
     padding-top: 70px;
     height: 100%;
-  }
-  /*بکگراند صفحه اصلی*/
-  .main-background {
-    background-image: url('iran-bg.png'); /* اینجا نام فایل تصویرت رو بذار */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-  }
-  
-  a {
+    background-color: #fcefc7ee; /* خاکی */
+}
+/*header*/
+.hero-header {
+  background-image: url('/user/img/photo18674888480-removebg-preview.png'); /* مسیر عکس رو درست کن */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* یا مثلاً 80vh */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner-img{
+  width: 300%;
+  max-height: 500px;
+  display: block;
+  object-fit: cover;
+  margin: 0 auto;
+  padding: 0 150px;
+  margin-top: 40px;
+}
+
+
+
+
+/* لینک‌ها */
+a {
     text-decoration: none;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    color: #333;
+    color: #2e7d32; /* سبز یشمی */
+}
+
+a:hover {
+    color: #1b5e20; /* سبز تیره‌تر */
+}
+
+/* تیترها */
+h1, h2, h3, h4, h5, h6 {
+    color: #2e7d32;
     font-weight: bold;
-  }
-  
-  .container {
+}
+
+/* کانتینر */
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-  }  
-  /* Navbar */
-  .navbar {
+}
+
+/* نوار ناوبری */
+.navbar {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-    background-color: #e0f7ff;
-  }
-  
-  .navbar a {
-    color: #004c6d !important;
+    background-color: #fcefc7ee; 
+}
+
+.navbar a {
+    color: #2e7d32 !important;
     font-weight: bold;
-  }
-  
-  .navbar a:hover {
-    color: #0077aa !important;
-  }
-  
-  .navbar-toggler-icon {
-    background-color: white;
-  }
-  
-/*استایل search*/
-  .search-box {
-    background: rgba(255, 255, 255, 0.1);
+}
+
+.navbar a:hover {
+    color: #1b5e20 !important;
+}
+
+.navbar-toggler-icon {
+    background-color: #fcefc7ee;
+}
+
+/* جعبه جستجو */
+.search-box {
+   margin-top:100px;
+    background: #2e7d32;
     backdrop-filter: blur(10px);
     padding: 40px;
-    
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .search-box h1 {
+}
+
+.search-box h1 {
     font-size: 32px;
-    color: #333;
-  }
-  
-  .search-box form .form-control {
+    color: #fcefc7ee;
+}
+
+.search-box form .form-control,
+.search-box form .form-select {
     border-radius: 8px;
     padding: 15px;
-  }
-  
-  .search-box form .form-select {
-    border-radius: 8px;
-    padding: 15px;
-  }
-  
-  .search-box form .btn {
+    border: 1px solid #2e7d32;
+}
+
+.search-box form .btn {
     border-radius: 8px;
     padding: 15px;
     font-weight: bold;
-  }
-  
- /*استایل card*/
- .card {
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+    background-color: #2e7d32;
+    color: #fcefc7ee;
+}
+
+.search-box form .btn:hover {
+    background-color: #1b5e20;
+}
+
+/* کارت‌ها */
+.card {
+    background-color: #fcefc7ee;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
 
 .card h5 {
-  color: #007bff;
+    color: #2e7d32;
 }
 
 .card p {
-  color: #555;
+    color: #555;
 }
 
 .card .btn {
-  background-color: #007bff;
-  color: white;
-  border-radius: 8px;
+    background-color: #2e7d32;
+    color: white;
+    border-radius: 8px;
 }
 
 .card .btn:hover {
-  background-color: #0056b3;
-} 
-/*استایل فیلتر*/
-#jobFilter{
-  border: 2px solid #0d6efd;
-  transition: all 0.3s ease;
+    background-color: #1b5e20;
 }
-#jobFilter:focus{
-  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
-}
-  /* Footer */
-  .footer-modern {
-    background:linear-gradient(135deg,#6a11cb 0%,#2575fc 100%);
-    color: #ffffff;
-    padding: 60px 20px 30px;
-    font-family: 'Vazirmatn', sans-serif;
-  }
-  
-  .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: auto;
-    gap: 30px;
-  }
-  
-  .footer-about,
-  .footer-links,
-  .footer-social {
-    flex: 1;
-    min-width: 250px;
-  }
-  
-  .footer-links ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-links ul li a {
-    color: #e0e0e0;
-    text-decoration: none;
-    margin: 8px 0;
-    display: inline-block;
-    transition: color 0.3s;
-  }
-  
-  .footer-links ul li a:hover {
-    color: #aadcff;
-  }
-  
-  .footer-social .social-icons {
-    display: flex;
-    gap: 15px;
-    margin-top: 10px;
-  }
-  
-  .footer-social .social-icons a {
-    font-size: 1.8rem;
-    color: #ffffff;
-    transition: color 0.3s ease;
-  }
-  
-  .footer-social .social-icons a:hover {
-    color: #00bcd4;
-  }
-  
-  .footer-bottom {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 14px;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    padding-top: 20px;
-    color: #f0f0f0;
-  }  
-  /* استایل صفحه درباره ما،تماس با ما،ورود و ثبت نام */
-  .form-container {
-    background-color: #ffffff;
-    border-radius: 8px;
-    padding: 40px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
-    margin: 50px auto;
-  }
-  
-  .form-container h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 28px;
-  }
-  
-  .form-container label {
-    font-size: 16px;
-    color: #555;
-  }
-  
-  .form-container .form-control {
-    border-radius: 8px;
-    padding: 12px;
-    margin-bottom: 20px;
-  }
-  
-  .form-container .btn {
-    background-color: #007bff;
-    color: white;
-    border-radius: 8px;
-    padding: 12px;
-    width: 100%;
-    font-weight: bold;
-  }
-  
-  .form-container .btn:hover {
-    background-color: #0056b3;
-  }
-  
-  .page-container {
-    padding: 40px 0;
-  }
-  
-  /* استایل تماس با ما */
-  .contact-form .form-control {
-    margin-bottom: 15px;
-  }
-  
-  .contact-form .btn {
-    background-color: #007bff;
-    color: white;
-    border-radius: 8px;
-  }
-  
-  .contact-form .btn:hover {
-    background-color: #0056b3;
-  }
-  
-  /* استایل درباره ما */
-  .about-section {
-    text-align: center;
-    background-color: #ffffff;
-    padding: 50px 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .about-section h2 {
-    font-size: 36px;
-    color: #007bff;
-  }
-  
-  .about-section p {
-    font-size: 18px;
-    color: #555;
-  }
-  .services{
-    background-color: #f5faff;
-  }
-  .box{
-    background-color: white;
-    transition: transform 0.3s ease,box-shadow 0.3s ease;
-  }
-  .box:hover{
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 123, 255, 0.1);
-  }
-  .box h5{
-    color: #333;
-    font-weight: bold;
-  }
-  .box p{
-    font-size: 0.9rem;
-    margin-top: 10px;
-  }
-  .cta-box {
-    background:linear-gradient(45deg,#00bcd4,#8e44ad);
-    color: #1a237e; 
-    text-align: center;
-    border-top: 5px solid #1e88e5; 
-    margin: 60px 40px;
-    border-radius: 20px;
-  }
-  
-  .cta-box h2 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-  }
-  
-  .cta-box .btn {
-    background-color: #f39c12; 
-    color: white;
-    padding: 12px 30px;
-    text-transform: uppercase;
-    font-weight: bold;
-    border-radius: 13px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-  }
-  
-  .cta.box .btn:hover {
-    background-color: #d35400; 
-  }
-  .about-section{
-    background-color: #f0faf7;
-    color: #333;
-    padding: 60px 20px;
-  }
-  .site-name{
-    font-size: 3rem;
-    color: #1a237e;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-  }
-  .about-text{
-    font-size: 1.2rem;
-    line-height: 1.6;
-    color: #555;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  .about-section .container{
-    max-width: 960px;
-    margin: 0 auto;
-  }
- 
-.hero-section {
-  height: 100vh;
-  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-  padding: 0 20px;
-}
-
-.section-style {
-  background-color: #fff;
-  border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  margin-bottom: 40px;
-}
-
-.section-style-alt {
-  background-color: #f0f4ff;
-  border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  margin-bottom: 40px;
-}
-
-h2 {
-  color: #2c3e50;
-}
-
-p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-}
-.content {
-  background-color: white;
-  padding: 30px;
+/*استایل دهی بنر آخر سایت*/
+.site2{
+  background-color: #1b5e20;
+  color:white ;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-h1 {
-  color: #007bff;
-}
-p {
-  color: #555;
-  line-height: 1.6;
-}
-.btn-back {
-  background-color: #007bff;
-  color: white;
-  border-radius: 8px;
-  text-decoration: none;
-  padding: 10px 20px;
-  display: inline-block;
-}
-.btn-back:hover {
-  background-color: #0056b3;
-}
-.img-fluid {
-  border-radius: 8px;
+  height: 150px;
+  text-align: center;
+  justify-content: center;
+  padding: 50px;
 }
 
-.main-image {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 8px;
+/* فیلتر شغل */
+#jobFilter {
+    border: 2px solid #2e7d32;
+    transition: all 0.3s ease;
+}
+.job-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
   margin-bottom: 20px;
 }
-.thumb-img {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  border: 2px solid transparent;
-  border-radius: 5px;
-}
-.thumb-img:hover {
-  border-color: #0d6efd;
-}
-.content-text {
-  text-align: justify;
-  line-height: 2;
+
+#jobFilter:focus {
+    box-shadow: 0 0 0 0.25rem rgba(46, 125, 50, 0.25);
 }
 
-.card-img-top img{
-  height: 200px;
+/* فوتر */
+.footer-bg{
   width: 100%;
-  object-fit: cover;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  
+}
+.footer-modern {
+  position: relative;
+  min-height: 300px;
+  color: #7c7a7a;
+   display: flex;
+  font-family: 'Vazirmatn', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 30px;
+}
+
+.footer-about,
+.footer-links,
+.footer-social {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li a {
+  color: #7c7a7a;
+  text-decoration: none;
+  margin: 8px 0;
+  display: inline-block;
+  transition: color 0.3s;
+  font-weight: bold;
+}
+
+.footer-links ul li a:hover {
+  color: #aadcff;
+}
+
+.footer-social .social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.footer-social .social-icons a {
+  font-size: 1.8rem;
+  color: #a8a4a4;
+  transition: color 0.3s ease;
+}
+
+.footer-social .social-icons a:hover {
+  color: #7c7a7a;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 20px;
+  color: #7c7a7a;
+}  
+
+.footer-links,.footer-social{
+  padding: 1rem;
+}
+
+.footer-links ul li a {
+    color: #e0e0e0;
+}
+
+.footer-links ul li a:hover {
+    color: #c8e6c9;
+}
+
+.footer-social .social-icons a {
+    color: #ffffff;
+}
+
+.footer-social .social-icons a:hover {
+    color: #a5d6a7;
+}
+
+.footer-bottom {
+    color: #f0f0f0;
+}
+
+/*استایل دکمه ها*/
+.btn-searach{
+  background-color: #1b5e20;
+  color: #fcefc7ee;
+  border: 1px ;
+  transition: 0.3s;
+}
+.btn-searach:hover{
+  background-color: #2e7d32;
+}
+.btn-register{
+  background-color: #fcefc7ee;
+  color: #1b5e20;
+  transition: 0.3s;
+  border: 1px solid;
+}
+.btn-register:hover{
+  background-color: #ffebb0ee;
+}
+.btn-login{
+  background-color: #fcefc7ee;
+  color: #1b5e20;
+  transition: 0.3s;
+  border: 1px solid #5a7d4e;
+}
+.btn-login:hover{
+  background-color: #ffebb0ee;
+}
+.btn-job{
+  border: 1px solid #5a7d4e ;
+}
+.btn-site{
+  background-color: #fcefc7ee;
+  color: #1b5e20;
+  transition: 0.3s;
+  border: 1px solid #5a7d4e;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: large;
+}
+/*دیزاین طرح اسلیمی*/
+.islimi-decor{
+  text-align:center;
+  margin-top:20px;
+}
+.islimi-decor img{
+  width:300px;
+  height:auto;
+  opacity:0.8;
 }
