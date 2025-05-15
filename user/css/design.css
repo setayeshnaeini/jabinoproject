@@ -7,7 +7,7 @@ body {
     padding: 0;
     padding-top: 70px;
     height: 100%;
-    background-color: #fcefc7ee; /* خاکی */
+    background-color: #ffffffee; /* خاکی */
 }
 /*header*/
 .hero-header {
@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
     top: 0;
     width: 100%;
     z-index: 1000;
-    background-color: #fcefc7ee; 
+    background-color: #ffffffee; 
 }
 
 .navbar a {

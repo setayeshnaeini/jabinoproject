@@ -11,7 +11,70 @@
   <link rel="icon" href="user/img/logo2.png">
 </head>
 <body>
+<!-- بخش بک‌گراند بالای صفحه -->
+ <div class="hero-header position-relative" style="background-image: url('user/img/back.webp'); background-size: cover; background-position: center; height: 400px;">
+  <!-- فضای خالی برای navbar -->
+  <div style="height: 70px;"></div>
+ </div>
+ <!-- جدیدترین فرصت‌های شغلی (اسلاید افقی) -->
+<div class="container my-5 position-relative">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h4 class="mb-0">جدیدترین فرصت‌های شغلی</h4>
+    <select class="form-select w-auto" id="jobFilter">
+      <option value="all">همه دسته‌بندی‌ها</option>
+      <option value="frontend">فرانت‌اند</option>
+      <option value="backend">بک‌اند</option>
+      <option value="uiux">طراح UI/UX</option>
+      <option value="manager">مدیر پروژه</option>
+      <option value="seo">متخصص سئو</option>
+    </select>
+  </div>
 
+  <div id="jobSlider" class="d-flex overflow-hidden" style="scroll-behavior: smooth;">
+    <!-- کارت ۱ -->
+    <div class="card flex-shrink-0 me-3" style="min-width: 300px; background-color: rgba(255,255,255,0.9);">
+      <div class="card-body">
+        <h5 class="card-title">برنامه‌نویس فرانت‌اند</h5>
+        <p class="text-muted mb-1">شرکت تکنو وب - تهران</p>
+        <p>تسلط به HTML, CSS, JS و React</p>
+        <a href="user/details.html" class="btn btn-outline-primary btn-sm mt-2">مشاهده جزئیات</a>
+      </div>
+    </div>
+
+    <!-- کارت ۲ -->
+    <div class="card flex-shrink-0 me-3" style="min-width: 300px; background-color: rgba(255,255,255,0.9);">
+      <div class="card-body">
+        <h5 class="card-title">کارشناس سئو</h5>
+        <p class="text-muted mb-1">شرکت آریا وب - مشهد</p>
+        <p>مسلط به سرچ کنسول، گوگل آنالیتیکس</p>
+        <a href="#" class="btn btn-outline-primary btn-sm mt-2">مشاهده جزئیات</a>
+      </div>
+    </div>
+
+    <!-- کارت ۳ -->
+    <div class="card flex-shrink-0 me-3" style="min-width: 300px; background-color: rgba(255,255,255,0.9);">
+      <div class="card-body">
+        <h5 class="card-title">مدیر پروژه</h5>
+        <p class="text-muted mb-1">شرکت راهکار - شیراز</p>
+        <p>تجربه مدیریت تیم‌های نرم‌افزاری و چابک</p>
+        <a href="#" class="btn btn-outline-primary btn-sm mt-2">مشاهده جزئیات</a>
+      </div>
+    </div>
+
+    <!-- کارت‌های بیشتر می‌تونی اضافه کنی -->
+  </div>
+
+  <!-- دکمه‌های پیمایش -->
+  <button onclick="scrollJobs(-1)" class="btn position-absolute top-50 start-0 translate-middle-y"
+    style="background-color: rgba(255,255,255,0.8); border: none; border-radius: 50%; width: 44px; height: 44px;">
+    <i class="bi bi-chevron-right fs-4 text-dark"></i>
+  </button>
+
+  <button onclick="scrollJobs(1)" class="btn position-absolute top-50 end-0 translate-middle-y"
+    style="background-color: rgba(255,255,255,0.8); border: none; border-radius: 50%; width: 44px; height: 44px;">
+    <i class="bi bi-chevron-left fs-4 text-dark"></i>
+  </button>
+</div>
   <!-- Navbar -->
   <nav class="navbar custom-navbar">
     <div class="container">
@@ -49,9 +112,7 @@
       </div>
     </div>
   </nav>
-    <section class="main-banner d-flex justify-content-center">
-      <img src="user/img/banersite.jpg" alt="بنر سایت" class="banner-img">
-    </section>
+
 
     <div class="islimi-decor">
       <img src="user/img/photo18674053728-removebg-preview.png" alt="طرح اسلیمی">
@@ -83,89 +144,11 @@
     <img src="user/img/photo18674053728-removebg-preview.png" alt="طرح اسلیمی">
   </div>
 
-  <!--قسمت فرصت های شغلی-->
-  <div class="container my-4">
-    <div class="row justify-content-center mb-4">
-      <div class="col-md-auto d-flex align-items-center flex-wrap gap-3">
-       
-      </div>
-      <div class="container">
-        <div class="d-flex justify-content-between align-items-center flex-wrap mb-4">
-          <h3 class="mb-0 text-center">جدیدترین فرصت‌های شغلی</h3>
-          <select class="form-select w-auto" id="jobFilter">
-            <option value="all">همه دسته‌بندی‌ها</option>
-            <option value="frontend">فرانت‌اند</option>
-            <option value="backend">بک‌اند</option>
-            <option value="uiux">طراح UI/UX</option>
-            <option value="manager">مدیر پروژه</option>
-            <option value="seo">متخصص سئو</option>
-          </select>
-        </div>
-      
-        <div class="row g-4">
-          <!-- کارت‌های شغلی -->
-            <div class="row g-4">
-              <div class="col-12 col-sm-6 col-md-4">
-                <div class="card h-100 p-3">
-                  <h5>برنامه‌نویس فرانت‌اند</h5>
-                  <p class="text-muted">شرکت تکنو وب - تهران</p>
-                  <p>تسلط به HTML, CSS, JavaScript و فریم‌ورک</p>
-                  <p>حقوق پیشنهادی:15 میلیون</p>
-                  <a href="user/details.html" class="btn btn-outline-primary btn-sm">مشاهده جزئیات</a>
-                </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-4">
-                <div class="card h-100 p-3">
-                  <h5>کارشناس دیجیتال مارکتینگ</h5>
-                  <p class="text-muted">شرکت آریا رسانه - مشهد</p>
-                  <p>آشنا به SEO، تبلیغات گوگل و بازاریابی محتوایی</p>
-                  <a href="#" class="btn btn-outline-primary btn-sm">مشاهده جزئیات</a>
-                </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-4">
-                <div class="card h-100 p-3">
-                  <h5>طراح رابط کاربری (UI)</h5>
-                  <p class="text-muted">استودیو طراحی نئو - شیراز</p>
-                  <p>مسلط به Figma و طراحی تجربه کاربری</p>
-                  <a href="#" class="btn btn-outline-primary btn-sm">مشاهده جزئیات</a>
-                </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-4">
-                <div class="card h-100 p-3">
-                  <h5>توسعه دهنده بک اند</h5>
-                  <p class="text-muted">شرکت وب سرویس-تهران</p>
-                  <p>تسلط به Node.js,MongoDB</p>
-                  <a href="#" class="btn btn-outline-primary btn-sm">مشاهده جزئیات</a>
-                </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-4">
-                <div class="card h-100 p-3">
-                  <h5>کارشناس فروش</h5>
-                  <p class="text-muted">شرکت کالا پخش نوین</p>
-                  <p>پیگیری مشتریان،افزایش فروش و معرفی محصولات جدید</p>
-                  <a href="#" class="btn btn-outline-primary btn-sm">مشاهده جزئیات</a>
-                </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-4">
-                <div class="card h-100 p-3">
-                  <h5>کارشناس منابع انسانی</h5>
-                  <p class="text-muted">گروه صنعتی آریا-تهران</p>
-                  <p>جذب و استخدام نیرو،مدیریت پرونده های پرسنلی</p>
-                  <a href="#" class="btn btn-outline-primary btn-sm">مشاهده جزئیات</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <div class="container my-5">
     <div class="row align-items-center" dir="rtl">
       <!-- تصویر سمت راست -->
       <div class="col-md-6 mb-4 mb-md-0">
-        <img src="user/img/summary-college.3-e1749a4d2e76.svg" alt="مزایای جابینو" class="img-fluid rounded shadow">
+        <img src="user/img/image-site.jpg" alt="مزایای جابینو" class="img-fluid rounded shadow">
       </div>
   
       <!-- متن مزایا سمت چپ -->
@@ -192,62 +175,169 @@
       </div>
     </div>
   </div>
+  <!-- نظرات مشتریان -->
+<div class="container my-5 position-relative">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h4 class="mb-0">نظرات مشتریان</h4>
+  </div>
+
+  <div id="testimonialSlider" class="d-flex overflow-hidden" style="scroll-behavior: smooth;">
+    
+    <!-- نظر ۱ -->
+    <div class="card flex-shrink-0 me-3" style="min-width: 300px; background-color: rgba(255,255,255,0.9);">
+      <div class="card-body">
+        <h6 class="fw-bold text-primary">محمد رضایی</h6>
+        <p>من چندین پروژه تولید محتوا با جابینو انجام دادم و باید بگم واقعاً تجربه‌ای حرفه‌ای بود. پشتیبانی سریع، قیمت مناسب و کیفیت عالی باعث شد دوباره همکاریم رو ادامه بدم.</p>
+      </div>
+    </div>
+
+    <!-- نظر ۲ -->
+    <div class="card flex-shrink-0 me-3" style="min-width: 300px; background-color: rgba(255,255,255,0.9);">
+      <div class="card-body">
+        <h6 class="fw-bold text-success">الهام موسوی</h6>
+        <p>برای طراحی سایت فروشگاهی‌م از جابینو استفاده کردم. نتیجه خیلی بهتر از انتظارم بود. طراح دقیقاً خواسته‌هام رو اجرا کرد و تحویل به‌موقع هم داشت. کاملاً راضی‌ام.</p>
+      </div>
+    </div>
+
+    <!-- نظر ۳ -->
+    <div class="card flex-shrink-0 me-3" style="min-width: 300px; background-color: rgba(255,255,255,0.9);">
+      <div class="card-body">
+        <h6 class="fw-bold text-danger">علی احمدی</h6>
+        <p>مهم‌ترین ویژگی جابینو برای من امنیت مالی بود. اولش مردد بودم ولی سیستم ضمانت پرداختشون باعث شد با خیال راحت کار رو بسپارم. پروژه‌ام خیلی دقیق اجرا شد.</p>
+      </div>
+    </div>
+
+    <!-- نظر ۴ -->
+    <div class="card flex-shrink-0 me-3" style="min-width: 300px; background-color: rgba(255,255,255,0.9);">
+      <div class="card-body">
+        <h6 class="fw-bold text-info">سپیده قاسمی</h6>
+        <p>جابینو واقعاً فضای کاری امنی برای فریلنسرها و کارفرماها ایجاد کرده. من پروژه طراحی رابط کاربریم رو اینجا دادم و کیفیت کارها و تعامل فریلنسر بی‌نظیر بود.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- دکمه چپ -->
+  <button onclick="scrollTestimonials(-1)" class="btn position-absolute top-50 start-0 translate-middle-y"
+    style="background-color: rgba(255,255,255,0.8); border: none; border-radius: 50%; width: 44px; height: 44px;">
+    <i class="bi bi-chevron-right fs-4 text-dark"></i>
+  </button>
+
+  <!-- دکمه راست -->
+  <button onclick="scrollTestimonials(1)" class="btn position-absolute top-50 end-0 translate-middle-y"
+    style="background-color: rgba(255,255,255,0.8); border: none; border-radius: 50%; width: 44px; height: 44px;">
+    <i class="bi bi-chevron-left fs-4 text-dark"></i>
+  </button>
+</div>
   <!--قسمت دسته بندی خدمات-->
   <section class="services py-5">
     <div class="container text-center">
         <h2 class="mb-4">دسته بندی خدمات</h2>
         <div class="row g-4">
-            <div class="col-md-4 col-lg-2">
+            <div class="col-md-3 col-sm-6">
               <a href="user/translation.html" class="text-decoration-none text-dark">               
-                 <div class="box p-3 shadow-sm rounded hover-shadow">
+                 <div class="box p-3 shadow-sm rounded hover-shadow bg-opacity-75">
                 <i class="bi bi-translate fs-1 text-primary"></i>
                 <h5 class="mt-2">ترجمه</h5>
                 <p class="text-muted">کارهای مهم خود را با آسایش به دستیار مجازی بسپارید.</p>
             </div></a>
             </div>
-            <div class="col-md-4 col-lg-2">
-                <div class="box p-3 shadow-sm rounded">
+            <div class="col-md-3 col-lg-6">
+                <div class="box p-3 shadow-sm rounded bg-opacity-75">
                     <i class="bi bi-file-earmark-text fs-1 text-success"></i>
                     <h5 class="mt-2">تولید محتوا</h5>
                     <p class="text-muted">نوشتن محتواهای جذاب و مناسب برای وبسایت ها و شبکه های اجتماعی</p>
                 </div>
             </div>
-            <div class="col-md-4 col-lg-2">
-                <div class="box p-3 shadow-sm rounded">
+            <div class="col-md-3 col-lg-6">
+                <div class="box p-3 shadow-sm rounded bg-opacity-75">
                     <i class="bi bi-laptop fs-1 text-warning"></i>
                     <h5 class="mt-2">طراحی سایت</h5>
                     <p class="text-muted">برای کسب و کار خود در اینترنت یک وبسایت بسازید تا معروف شوید.</p>
                 </div>
             </div>
-            <div class="col-md-4 col-lg-2">
-              <div class="box p-3 shadow-sm rounded">
+            <div class="col-md-3 col-lg-6">
+              <div class="box p-3 shadow-sm rounded bg-opacity-75">
                   <i class="bi bi-briefcase fs-1 text-warning"></i>
                   <h5 class="mt-2">مشاوره کسب و کار</h5>
                   <p class="text-muted">برای کسب و کار خود در اینترنت یک وبسایت بسازید تا معروف شوید.</p>
               </div>
           </div>
-          <div class="col-md-4 col-lg-2">
-            <div class="box p-3 shadow-sm rounded">
+          <div class="col-md-3 col-lg-6">
+            <div class="box p-3 shadow-sm rounded bg-opacity-75">
                 <i class="bi bi-camera fs-1 text-warning"></i>
                 <h5 class="mt-2">عکاسی حرفه ای</h5>
                 <p class="text-muted">برای کسب و کار خود در اینترنت یک وبسایت بسازید تا معروف شوید.</p>
             </div>
         </div>
-            <div class="col-md-4 col-lg-2">
-                <div class="box p-3 shadow-sm rounded">
+            <div class="col-md-3 col-lg-6">
+                <div class="box p-3 shadow-sm rounded bg-opacity-75">
                     <i class="bi bi-code-slash fs-1 text-danger"></i>
                     <h5 class="mt-2">برنامه نویسی</h5>
                     <p class="text-muted">برای کسب و کار خود نرم افزار یا اپلیکیشن سقارش دهید تا فروشتان چند برابر شود.</p>
                 </div>
             </div>
-            <div class="col-md-4 col-lg-2">
-              <div class="box p-3 shadow-sm rounded">
+            <div class="col-md-3 col-lg-6">
+              <div class="box p-3 shadow-sm rounded bg-opacity-75">
                 <i class="bi bi-megaphone fs-1 text-danger"></i>
                 <h5 class="mt-2">بازاریابی دیجیتال</h5>
                 <p class="text-muted">برای کسب و کار خود نرم افزار یا اپلیکیشن سقارش دهید تا فروشتان چند برابر شود.</p>
         </div>
           </div>
   </section>
+  <!-- نحوه برونسپاری پروژه‌ها -->
+<section class="py-5 bg-light">
+  <div class="container text-center">
+    <h3 class="mb-5">نحوه برونسپاری پروژه‌ها</h3>
+    <div class="row g-4 justify-content-center">
+
+      <!-- مرحله ۱ -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card h-100 shadow-sm p-3 border-0">
+          <div class="card-body">
+            <i class="bi bi-pencil-square fs-1 text-primary mb-3"></i>
+            <h5 class="card-title">ثبت پروژه رایگان</h5>
+            <p class="text-muted">پروژه‌ات رو به صورت رایگان ثبت کن و مشخص کن چه تخصصی نیاز داری. ثبت پروژه کمتر از ۲ دقیقه زمان می‌بره.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- مرحله ۲ -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card h-100 shadow-sm p-3 border-0">
+          <div class="card-body">
+            <i class="bi bi-list-check fs-1 text-success mb-3"></i>
+            <h5 class="card-title">بررسی و مقایسه پیشنهادها</h5>
+            <p class="text-muted">از بین پیشنهادهای فریلنسرها مقایسه کن، سوابق و امتیازاتشون رو ببین و بهترین رو انتخاب کن.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- مرحله ۳ -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card h-100 shadow-sm p-3 border-0">
+          <div class="card-body">
+            <i class="bi bi-person-check fs-1 text-warning mb-3"></i>
+            <h5 class="card-title">استخدام فریلنسر</h5>
+            <p class="text-muted">فریلنسر مورد نظرت رو با اطمینان استخدام کن. پرداخت امن هم در دسترسته تا خیالت راحت باشه.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- مرحله ۴ -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card h-100 shadow-sm p-3 border-0">
+          <div class="card-body">
+            <i class="bi bi-check-circle fs-1 text-danger mb-3"></i>
+            <h5 class="card-title">تحویل پروژه</h5>
+            <p class="text-muted">پس از اتمام کار، خروجی رو دریافت کن، تأییدش کن و در صورت رضایت پرداخت رو انجام بده.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
   <!--بنر قسمت footer-->
   <section class="cta-box">
     <div class="container text-center">
@@ -263,37 +353,87 @@
   <footer class="footer-modern">
     <img src="user/img/photo18674888480-removebg-preview.png" class="footer-bg w-100 h-100 position-absolute top-0 start-0">
     <div class="footer-container">
-      <div class="footer-about">
-        <h2> جابینو</h2>
-        <p>پیدا کردن شغل مناسب، آینده‌ای روشن‌تر بساز!</p>
-      </div>
-  
-      <div class="footer-links">
-        <h3>لینک‌های مفید</h3>
-        <ul>
-          <li><a href="user/about.html">درباره ما</a></li>
-          <li><a href="site.html">فرصت‌های شغلی</a></li>
-          <li><a href="user/contact.html">تماس با ما</a></li>
-          <li><a href="#">سوالات متداول</a></li>
-        </ul>
-      </div>
-  
-      <div class="footer-social">
-        <h3>ما را دنبال کنید</h3>
-        <div class="social-icons">
-          <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
-          <a href="https://t.me" target="_blank"><i class="bi bi-telegram"></i></a>
-          <a href="https://www.linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a>
+
+      
+          <!-- توضیح درباره جابینو -->
+          <div class="mb-4 px-3 text-end">
+            <p class="mb-2">جابینو یک پلتفرم تخصصی برای اتصال فریلنسرها و کارفرمایان است که با هدف تسهیل در انجام پروژه‌ها طراحی شده است.</p>
+            <p class="mb-2">در جابینو می‌توانید پروژه خود را رایگان ثبت کنید و از میان صدها متخصص، بهترین را انتخاب نمایید.</p>
+            <p class="mb-2">ما به شفافیت، امنیت پرداخت و رضایت دو طرف اهمیت می‌دهیم.</p>
+            <p class="mb-0">با جابینو، مسیر حرفه‌ای شما روشن‌تر خواهد بود.</p>
+          </div>
+      
+          <!-- خط جداکننده -->
+          <hr class="border-light" style="opacity: 0.2;">
+      
+          <!-- چهار بخش ذهنی -->
+          <div class="row text-end py-4">
+      
+            <!-- ستون ۱: فریلنسر -->
+            <div class="col-md-3 col-6 mb-3">
+              <h6 class="fw-bold">فریلنسر</h6>
+              <ul class="list-unstyled mt-2">
+                <li>پروژه‌ها</li>
+                <li>طرح‌های عضویت</li>
+                <li>نحوه تعامل</li>
+                <li>راهنمای کار</li>
+              </ul>
+            </div>
+      
+            <!-- ستون ۲: کارفرما -->
+            <div class="col-md-3 col-6 mb-3">
+              <h6 class="fw-bold">کارفرما</h6>
+              <ul class="list-unstyled mt-2">
+                <li>فریلنسرها</li>
+                <li>نمونه‌کارها</li>
+                <li>خدمات</li>
+              </ul>
+            </div>
+      
+            <!-- ستون ۳: جابینو در یک نگاه -->
+            <div class="col-md-3 col-6 mb-3">
+              <h1 class="h5 fw-bold">جابینو در یک نگاه</h1>
+              <ul class="list-unstyled mt-2">
+                <li><a href="user/contact.html" class="text-white text-decoration-none">تماس با ما</a></li>
+                <li><a href="user/about.html" class="text-white text-decoration-none">درباره ما</a></li>
+                <li><a href="#" class="text-white text-decoration-none">وبلاگ</a></li>
+                <li><a href="#" class="text-white text-decoration-none">شرایط و قوانین</a></li>
+              </ul>
+            </div>
+      
+            <!-- ستون ۴: شبکه‌های اجتماعی + اطلاعات تماس -->
+            <div class="col-md-3 col-6 mb-3">
+              <p class="fw-bold mb-2">ما را در شبکه‌های اجتماعی دنبال کنید</p>
+              <div class="d-flex justify-content-start gap-3 fs-4 mb-3">
+                <a href="https://www.instagram.com" class="text-white" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://t.me" class="text-white" target="_blank"><i class="bi bi-telegram"></i></a>
+                <a href="https://www.linkedin.com" class="text-white" target="_blank"><i class="bi bi-linkedin"></i></a>
+              </div>
+              <p class="mb-1">شماره تماس: ۰۲۱-۱۲۳۴۵۶۷۸</p>
+              <p class="mb-3">ایمیل: info@jabino.ir</p>
+              <small class="d-block mt-3">© تمامی حقوق مادی و معنوی این سایت متعلق به شرکت جابینو است.</small>
+            </div>
+      
+          </div>
         </div>
-      </div>
-    </div>
-  
-    <div class="footer-bottom">
-      <p>© 2025  جابینو، تمامی حقوق محفوظ است.</p>
-    </div>
+      
   </footer>
     </div>
-
+<!--کدهای جاوا-->
+<script>
+  function scrollJobs(direction) {
+    const slider = document.getElementById('jobSlider');
+    const cardWidth = slider.querySelector('.card').offsetWidth + 16;
+    slider.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
+  }
+</script>
+<script>
+  function scrollTestimonials(direction) {
+    const slider = document.getElementById('testimonialSlider');
+    const cardWidth = slider.querySelector('.card').offsetWidth + 16;
+    slider.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
+  }
+</script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
